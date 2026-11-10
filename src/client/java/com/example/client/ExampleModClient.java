@@ -86,7 +86,7 @@ public class ExampleModClient implements ClientModInitializer {
         float dYaw = Mth.wrapDegrees(targetYaw - player.getYRot());
         float dPitch = targetPitch - player.getXRot();
 
-        if (Math.abs(dYaw) < 0.3f && Math.abs(dPitch) < 0.3f) return;
+        if (Math.abs(dYaw) < 0.5f && Math.abs(dPitch) < 0.5f) return;
 
         float stepYaw = Mth.clamp(dYaw * SMOOTHING, -MAX_STEP, MAX_STEP);
         float stepPitch = Mth.clamp(dPitch * SMOOTHING, -MAX_STEP, MAX_STEP);
