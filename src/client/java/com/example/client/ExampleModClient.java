@@ -33,8 +33,8 @@ public class ExampleModClient implements ClientModInitializer {
 
     private static final double DEFAULT_ENTITY_REACH = 3.0;
     private static final double DEFAULT_BLOCK_REACH = 4.5;
-    private static final float SMOOTHING = 0.2f;   // chhota = zyada smooth
-    private static final float MAX_STEP = 8.0f;    // max degrees per tick
+    private static final float SMOOTHING = 0.6f;   // chhota = zyada smooth
+    private static final float MAX_STEP = 40.0f;    // max degrees per tick
 
     private static KeyMapping openKey;
 
